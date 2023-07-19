@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+@font-face{
+    font-family: myFirstFont;
+    src: url(Fonts/BERNHC.TTF);
+}
+@font-face{
+    font-family: mySecondFont;
+    src: url(Fonts/calibril.ttf);
+}
+@font-face{
+    font-family: myThirdFont;
+    src: url(Fonts/PublicSans-Bold.ttf);
+}
+
+.row{
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.row1{
+    width: 95%;
+    overflow: hidden;
+    margin: auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+[class*="col-"] {
+    float: left;
+  }
+
+
+body{
+    font-family: mySecondFont;
+}
+
+.img-size-1{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.icon-box .icon{
+    width: 100px;
+}
+.icon-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+.icon-box h3{
+    margin-top: 15px;
+}
+#industry{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 75px;
+}
+.footer-head{
+    color: #5a17f2;
+}
+.footer-head p{
+    margin-left: 90px;
+    letter-spacing: 7px;
+}
+.footer-head-1 h1{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5a17f2;
+    width: 200px;
+}
+.footer-head-1 p{
+    width: 200px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.footer-main{
+    background-color: rgb(209, 209, 209);
+    padding: 150px 50px;
+    margin-top: 50px;
+}
+.email{
+    display: flex;
+    margin-top: 25px;;
+}
+#email-btn{
+    background-color: #5a17f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.email input{
+    padding: 5px 10px;
+    border: none;
+    background-color:rgb(172, 172, 172)
+}
+
+footer{
+    background-color: black;
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+}
+.logo{
+  width: 250px;
+}
+  @media only screen and (max-width: 599px){
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        padding: 30px;
+      }
+    .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a.icon {
+        padding: 14px 16px;
+        font-size: 30px;
+        color: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .content-1{
+        width: 300px;
+        margin-top: 10px;
+      }
+      .content-1::after{
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .content-1 i{
+        font-size: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .content-1 i,.content-1 p{
+        float: left;
+      }
+      .banner-head{
+        color: #5a17f2;
+      }
+      .banner-head p{
+        margin-left: 90px;
+        letter-spacing: 7px;
+      }
+      .col-size{
+        width: 50%;
+      }
+      .icon-box .icon{
+        width: 70px;
+    }
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .footer-main > div{
+        margin-top: 25px;
+    }
+    .last-box{
+      margin: auto;
+      float: none;
+    }
+  }
+
+
+
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        padding: 30px;
+      }
+      
+      .topnav::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .topnav a.icon {
+        display: none;
+      }
+      .content-1{
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      .content-1 i{
+        font-size: 25px;
+        display: block;
+        margin-right: 25px;
+      }
+      #myLinks{
+        float: right;
+      }
+      .menu-text{
+        display: flex;
+      }
+      .banner-head{
+        width: 250px;
+        float: left;
+      }
+      .content-1{
+        margin-left: 20px;
+      }
+      .banner-head{
+        color: #5a17f2;
+      }
+      .banner-head p{
+        margin-left: 90px;
+        letter-spacing: 7px;
+      }
+      .news{
+        margin-top: 30px;
+      }
+  }
+
+
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .col-size{width: 20%;}
+    
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        padding: 30px;
+      }
+      
+      .topnav::after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .topnav a.icon {
+        display: none;
+      }
+      .content-1{
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-evenly ;
+        margin-top: 10px;
+      }
+      .content-1 i{
+        font-size: 25px;
+      }
+      #myLinks{
+        float: right;
+      }
+      .menu-text{
+        display: flex;
+      }
+      .banner-head{
+        width: 250px;
+        float: left;
+      }
+      .content-1{
+        margin-left: 20px;
+      }
+      .banner-head{
+        color: #5a17f2;
+      }
+      .banner-head p{
+        margin-left: 90px;
+        letter-spacing: 7px;
+      }
+      .footer-head-1{
+        padding-left: 50px;
+    }
+    .news{
+        margin-top: 0px;
+      }
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 600px){
+    .footer-head-1{
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .news{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
